@@ -1,26 +1,51 @@
-# Flutter-Bytewise-Fellowship
+# Voice Assistant Application in Flutter
 
-This repository contains all the assignments, exercises throughout my 3 months Flutter fellowship at [ByteWise](https://github.com/bytewiseltd). All the tasks are categorized based on weeks and projects are further placed in their respective folders.
+This is a Voice Assistant application developed in Flutter. The application allows users to interact with the assistant using voice commands and receive responses in the form of text or images.
 
-### About the Flutter Fellowship
+## Features
 
-The Flutter Fellowship at ByteWise is a comprehensive program designed to provide hands-on experience to aspiring Flutter developers. The program consists of a series of assignments and exercises covering various topics, including Flutter basics, state management, networking, and more. Fellows will have access to a mentor and will work on real-world projects throughout the program.
+- User-friendly UI with animations.
+- Integration of ChatGPT and DALL-E APIs for testing purposes.
+- Voice-to-text conversion for recognizing user commands.
+- Ability to create and display text or image responses.
 
-#### Week 1:
-- `Onboarding` - It was an orientation week where we get to know our instructor and had some chit chat
-#### Week 2:
-- `Rest API` - Learned about RESTful APIs and how to consume data from them in our projects. [Click Here to see the work](./Week2/restapiapp)
-- `State Management` - Explored different state management solutions in Flutter such as setState, InheritedWidget, GetX, and Provider. [Click Here to see the work](./Week2/statemanagementapp)
+## Screenshots
 
-#### Week 3:
-- `Firebase` - Learned about Firebase and how to use it for real-time data synchronization, authentication, and cloud functions in Flutter. [Click Here to see the work](./Week3/firebase_app)
+Here are some screenshots of the application:
 
-#### Week 4:
-- `Introduction to Widgets` - Explored the basics of widgets in Flutter, how the app actually works, and learned how to create custom widgets using StatelessWidget and StatefulWidget.  [Click Here to see the work](./Week4/intro_to_widgets)
+![Screenshot 1](Preview.PNG)
 
+## How to Run the Code
 
-#### Week 5: 
-- `Animations` - Explored the basics of animation in flutter and created a app which contained the animations with Getx as state management. [Click Here to see the work](./Week5)
+To run the code locally, follow these steps:
 
-#### Week 6:
-- `Advanced UI` - Here we explored about the different types of layout that are in flutter with which we can make beautiful UI. [Click Here to see the work](./Week6)
+1. Make sure you have Flutter installed on your system. If not, you can find the installation instructions in the official [Flutter documentation](https://flutter.dev/docs/get-started/install).
+
+2. Clone this repository to your local machine using the following command:
+
+```
+git clone https://github.com/your-username/your-repository.git
+```
+3. Open the project in your preferred code editor.
+
+4. Install the required dependencies by running the following command in the project directory:
+```
+flutter pub get
+```
+5. Obtain the necessary API credentials for ChatGPT and DALL-E. If you don't have them yet, you can sign up for the respective services and follow the API documentation to obtain the required credentials.
+
+6. Add the API credentials to the project by creating a new file named `secrets.dart` in the `lib` directory. In this file, define the API credentials as constants:
+
+```dart
+// secrets.dart
+
+const String ApiKey = 'YOUR_CHATGPT_API_KEY';
+```
+7. Once the API credentials are added, you can run the application on a simulator or a physical device by executing the following command:
+```
+flutter run
+```
+## Limitations and Future Improvements
+- The current implementation of the application uses free versions of the ChatGPT and DALL-E APIs, which have limited responses. To fully launch the application, it would require upgrading to a paid API plan or implementing alternative solutions.
+- The voice recognition and conversion process can be further improved to enhance accuracy and speed.
+- Additional UI enhancements, such as theme customization and more animations, could be implemented to improve the overall user experience.
